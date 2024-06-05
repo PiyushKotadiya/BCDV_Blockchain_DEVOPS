@@ -1,0 +1,13 @@
+name: Echo Piyush on Push
+
+on: [push]
+
+jobs:
+  echo-name:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Piyush
+        run: echo "Piyush"
